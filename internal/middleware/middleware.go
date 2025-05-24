@@ -1,10 +1,10 @@
-package api
+package middleware
 
 import (
 	"net/http"
 	"strings"
 
-	"ai-doctor-backend/internal/utils"
+	"github.com/subhammahanty235/medai/internal/utils"
 
 	"github.com/gin-gonic/gin"
 	"go.mongodb.org/mongo-driver/bson/primitive"

@@ -3,9 +3,9 @@ package handlers
 import (
 	"net/http"
 
-	"ai-doctor-backend/internal/api"
-	"ai-doctor-backend/internal/models"
-	"ai-doctor-backend/internal/service"
+	"github.com/subhammahanty235/medai/internal/middleware"
+	"github.com/subhammahanty235/medai/internal/models"
+	"github.com/subhammahanty235/medai/internal/service"
 
 	"github.com/gin-gonic/gin"
 )
@@ -53,7 +53,7 @@ func (h *AuthHandler) Login(c *gin.Context) {
 }
 
 func (h *AuthHandler) GetProfile(c *gin.Context) {
-	userID, ok := api.GetUserID(c)
+	userID, ok := middleware.GetUserID(c)
 	if !ok {
 		c.JSON(http.StatusUnauthorized, gin.H{"error": "Invalid user ID"})
 		return

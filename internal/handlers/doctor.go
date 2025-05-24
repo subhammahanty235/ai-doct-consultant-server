@@ -3,7 +3,7 @@ package handlers
 import (
 	"net/http"
 
-	"ai-doctor-backend/internal/service"
+	"github.com/subhammahanty235/medai/internal/service"
 
 	"github.com/gin-gonic/gin"
 )
@@ -44,7 +44,7 @@ func (h *DoctorHandler) GetRealDoctors(c *gin.Context) {
 	specialty := c.Query("specialty")
 
 	var doctors []interface{}
-	var err error
+	// var err error
 
 	if specialty != "" {
 		realDoctors, err := h.doctorService.GetRealDoctorsBySpecialty(specialty)

@@ -3,8 +3,8 @@ package service
 import (
 	"context"
 
-	"ai-doctor-backend/internal/db"
-	"ai-doctor-backend/internal/models"
+	"github.com/subhammahanty235/medai/internal/db"
+	"github.com/subhammahanty235/medai/internal/models"
 
 	"go.mongodb.org/mongo-driver/bson"
 )

@@ -4,7 +4,7 @@ import (
 	"context"
 	"log"
 
-	"ai-doctor-backend/internal/models"
+	"github.com/subhammahanty235/medai/internal/models"
 
 	"go.mongodb.org/mongo-driver/bson"
 )

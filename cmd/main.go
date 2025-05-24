@@ -3,9 +3,9 @@ package main
 import (
 	"log"
 
-	"github.com/subhammahanty235/medai/config"
-	"github.com/subhammahanty235/medai/internal/api"
+	"github.com/subhammahanty235/medai/internal/config"
 	"github.com/subhammahanty235/medai/internal/db"
+	"github.com/subhammahanty235/medai/internal/shared"
 )
 
 func main() {
@@ -19,7 +19,7 @@ func main() {
 	}
 
 	// Initialize router
-	router := api.SetupRouter(database, cfg)
+	router := shared.SetupRouter(database, cfg)
 
 	// Start server
 	log.Printf("Server starting on port %s", cfg.Port)

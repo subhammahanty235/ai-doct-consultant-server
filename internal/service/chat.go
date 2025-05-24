@@ -6,9 +6,9 @@ import (
 	"strings"
 	"time"
 
-	"ai-doctor-backend/internal/db"
-	"ai-doctor-backend/internal/models"
-	"ai-doctor-backend/internal/utils"
+	"github.com/subhammahanty235/medai/internal/db"
+	"github.com/subhammahanty235/medai/internal/models"
+	"github.com/subhammahanty235/medai/internal/utils"
 
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/bson/primitive"
